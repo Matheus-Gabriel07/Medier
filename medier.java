@@ -9,7 +9,7 @@ public class medier {
         int granIn = 0;
         int granFi = 0;
         double valueConver = 0;
-        double resp = 0.00000000000;
+        double resp = 0;
 
         int num = 0;
 
@@ -57,49 +57,34 @@ public class medier {
                         System.out.println("\n==================\n"
                             +"Digite o número a ser convertido");
                         num = sc.nextInt();
+                        break;
 
-                        if (granFi < granIn) {
-                            valueConver = num*(10^3);
-                        } else if (granFi > granIn) {
-                            valueConver = num/(10^3);
-                        }
+                    case 3:
+                        System.out.println("\n==================\n"
+                            +"Digite o valor incial da grandeza\n"
+                            +"[1] mm\n"
+                            +"[2] cm\n"
+                            +"[3] dm\n"
+                            +"[4] m\n"
+                            +"[5] dam\n"
+                            +"[6] hm\n"
+                            +"[7] km\n");
+                        granIn = sc.nextInt();
 
-                        switch (granFi) {
-                            case 1:
-                                resp = valueConver;
-                                System.out.println(resp+"mm³");
-                                break;
+                        System.out.println("\n==================\n"
+                            +"Digite o valor incial da grandeza\n"
+                            +"[1] mm\n"
+                            +"[2] cm\n"
+                            +"[3] dm\n"
+                            +"[4] m\n"
+                            +"[5] dam\n"
+                            +"[6] hm\n"
+                            +"[7] km\n");
+                        granFi = sc.nextInt();
 
-                            case 2:
-                                resp = valueConver;
-                                System.out.println(resp+"cm³");
-                                break;
-
-                            case 3:
-                                resp = valueConver;
-                                System.out.println(resp+"dm³");
-                                break;
-
-                            case 4:
-                                resp = valueConver;
-                                System.out.println(resp+"m³");
-                                break;
-
-                            case 5:
-                                resp = valueConver;
-                                System.out.println(resp+"dam³");
-                                break;
-
-                            case 6:
-                                resp = valueConver;
-                                System.out.println(resp+"hm³");
-                                break;
-
-                            case 7:
-                                resp = valueConver;
-                                System.out.println(resp+"km³");
-                                break;
-                        }
+                        System.out.println("\n==================\n"
+                            +"Digite o número a ser convertido");
+                        num = sc.nextInt();
                         break;
                 }
             }
